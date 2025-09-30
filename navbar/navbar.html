@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">void consturt</a>
+        </div>
+        <div class="menu-toggle">
+            <p id="menu-open">Menu</p>
+            <p id="menu-close" style="display: none;">Close</p>
+        </div>
+    </nav>
+    <div class="menu-overlay">
+        <!-- Tombol close menu di pojok kanan atas -->
+        <button id="close-menu">×</button>
+        <div class="menu-content">
+            <div class="menu-items">
+                <div class="col-lg">
+                    <div class="menu-preview-img">
+                        <img src="latte.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="menu-links">
+                        <div class="link"><a href="vision.html" data-img="cappucino.png">Vision</a></div>
+                        <div class="link"><a href="works.html" data-img="cortado.png">Works</a></div>
+                        <div class="link"><a href="about.html" data-img="latte.png">About</a></div>
+                        <div class="link"><a href="contact.html" data-img="cappucino.png">Contact</a></div>
+                    </div>
+                    <div class="menu-socials">
+                        <div class="social"><a href="#">Behance</a></div>
+                        <div class="social"><a href="#">Dribbble</a></div>
+                        <div class="social"><a href="#">LinkedIn</a></div>
+                        <div class="social"><a href="#">Instagram</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-footer">
+                <div class="col-lg"><a href="#">Run sequence</a></div>
+                <div class="col-sm">
+                    <a href="#">Origin</a>
+                    <a href="#">join signal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-img"><img src="" alt=""></div>
+            <h1>Kilau Wedding</h1>
+        </section>
+    </div>
+
+    <!-- Script GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Script Navbar JS -->
+    <script src="./navbar.js"></script>
+</body>
+
+</html>

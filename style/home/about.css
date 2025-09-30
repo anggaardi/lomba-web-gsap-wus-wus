@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100..900&display=swap');
+
+.aboutPage h1 {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.02rem;
+}
+
+.aboutPage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutPage section {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  background-color: #161616;
+  color: #fff;
+  overflow: hidden;
+}
+
+.aboutPage .intro,
+.aboutPage .outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPage .header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 1;
+  text-align: center;
+}
+
+.aboutPage .spotlight {
+  background-color: #101010;
+}
+
+.aboutPage .spotlight-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(5%);
+  will-change: transform;
+}
+
+.aboutPage .row {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.aboutPage .img {
+  flex: 1;
+  aspect-ratio: 5 / 7;
+  overflow: hidden;
+}
+
+.aboutPage .img img {
+  opacity: 0.5;
+  filter: saturate(0);
+  transition: all 0.3s ease;
+}
+.aboutPage .img img:hover {
+  opacity: 1;
+  filter: saturate(1);
+}
+
+.aboutPage .mask-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100svh;
+  background-color: #000;
+  -webkit-mask: url(../../image/logo.svg) center/contain no-repeat;
+  mask: url(../../image/logo.svg) center/contain no-repeat;
+  -webkit-mask-size: 0%;
+  mask-size: 0%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.aboutPage .mask-container .mask-img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutPage .mask-img {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 40%, transparent 70%);
+  z-index: 0;
+}
+
+@media (max-width: 1000px) {
+  .aboutPage h1 {
+    font-size: 4rem;
+  }
+
+  .aboutPage .spotlight-images {
+    width: 200vw;
+    left: -25vw;
+  }
+}
