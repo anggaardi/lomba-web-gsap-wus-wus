@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duo Studio</title>
-  <script src="head-links.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/SplitText.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+  <title>Kilau Studio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="cursor"></div>
+    <!-- Purple effect -->
+    <div id="purple"></div>
+
+    <!-- Navbar (Fixed) -->
+        <!-- <nav id="nav">
         <div class="logo">
             <a href="#">Kilau Wedding</a>
         </div>
         <div class="menu-toggle">
-            <p id="menu-open">Menu</p>
-            <p id="menu-close" style="display: none;">Close</p>
+            <h4 id="menu-open">Menu</h4>
+            <h4 id="menu-close" style="display: none;">Close</h4>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Menu Overlay -->
- <div class="menu-overlay">
-  
+    <!-- <div class="menu-overlay">
         <button id="close-menu">×</button>
         <div class="menu-content">
           <div class="menu-items">
@@ -63,25 +61,191 @@
             </div>
           </div>
         </div>
-      </div>
-    <div id="purple"></div>
+    </div> -->
 
-    <div class="main">
-         <div class="container">
-    <div class="hero">
-      <h1>Kilau <br>Wedding</h1>
-    </div>
-  </div>
-        
-        <!-- Page 1 -->
-        <div class="page1">
-            <h1>Digitally crafted</h1>
-            <h2>brand experiences</h2>
-            <video autoplay muted loop src="https://duo-studio.co/assets/home/Duo%20Reel--Desktop-reduced.mp4"></video>
+    <!-- Main Container -->
+    <div id="main">
+        <!-- Page 1 - Image Grid Section -->
+        <div class="page-1">
+            <div class="content-page-1">
+                <div class="rotate-div">
+                    <!-- Row 1 -->
+                    <div id="row-div-1" class="row-div">
+                        <div class="img-div">
+                            <img src="../image/image (1).jpg" alt="image 1">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (2).jpg" alt="image 2">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (3).jpg" alt="image 3">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (4).jpg" alt="image 4">
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div id="row-div-2" class="row-div">
+                        <div class="img-div">
+                            <img src="../image/image (5).jpg" alt="image 5">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (6).jpg" alt="image 6">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (7).jpg" alt="image 7">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (8).jpg" alt="image 8">
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div id="row-div-3" class="row-div">
+                        <div class="img-div">
+                            <img src="../image/image (9).jpg" alt="image 9">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (10).jpg" alt="image 10">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (11).jpg" alt="image 11">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (12).jpg" alt="image 12">
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div id="row-div-4" class="row-div">
+                        <div class="img-div">
+                            <img src="../image/image (13).jpg" alt="image 13">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (14).jpg" alt="image 14">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (15).jpg" alt="image 15">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (16).jpg" alt="image 16">
+                        </div>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div id="row-div-5" class="row-div">
+                        <div class="img-div">
+                            <img src="../image/image (17).jpg" alt="image 17">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (18).jpg" alt="image 18">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (19).jpg" alt="image 19">
+                        </div>
+                        <div class="img-div">
+                            <img src="../image/image (20).jpg" alt="image 20">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overlay -->
+                <div class="overlay-div">
+                    <h1>Kilau Studio</h1>
+                    <div class="scroll-down">
+                        <h3>SCROLL DOWN</h3>
+                        <div class="scroll-p">
+                            <div class="scrolling"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
 
-        <!-- Page 2 -->
+        <!-- Page 2 - Text Section -->
+        <div class="page-2">
+            <div class="rounded-div-wrapper">
+                <div class="rounded-div"></div>
+            </div>
+            <div class="content-2">
+                <div class="text-area">
+                    <h1>Strategic design solutions</h1>
+                    <h2>that fuel your bottom line</h2>
+                </div>
+                <div class="text-area-hover">
+                    <h1>Strategic design solutions.</h1>
+                    <h2>that fuel your bottom line</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3 - CTA Section -->
+        <div class="page-3">
+            <div class="top-page-3">
+                <h4>Unlock profit with monthly design sprints.</h4>
+                <div class="cta">
+                    <div class="cta-book">
+                        <div class="cta-txt">
+                            <h2>Book a demo</h2>
+                            <h2>Book a demo</h2>
+                        </div>
+                    </div>
+                    <div class="cta-book cta-book-2">
+                        <div class="cta-txt">
+                            <h2>View Pricing</h2>
+                            <h2>View Pricing</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btm-page-3">
+                <div class="brand-logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg" alt="Dell">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" alt="HP">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Oral-B_logo.svg" alt="Oral-B">
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4 - About Section + Zoom -->
+        <div class="page-4">
+            <div class="lft-page-4">
+                <h1>We are <br>Kilau Studio.</h1>
+                <div class="cir-page-4">
+                    <img src="../image/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="rght-page-4">
+                <div class="content-rght-page-4 c-one">
+                    <h1>Growth and ROI</h1>
+                    <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
+                </div>
+                <div class="content-rght-page-4 c-two">
+                    <h1>Strategic Thinking</h1>
+                    <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
+                </div>
+                <div class="content-rght-page-4 c-three">
+                    <h1>Design Excellence</h1>  
+                    <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5 - Duo Studio Content -->
+        <div class="page1">
+            <h1>We are Duo Studio</h1>
+            <h2>WE ARE DUO STUDIO</h2>
+            <video autoplay loop muted src="https://duostudio.com/video/intro.mp4"></video>
+            <div class="page1-bottom">
+                <h3>SCROLL</h3>
+                <img src="https://duostudio.com/assets/arrow.svg" alt="arrow">
+            </div>
+        </div>
+
+        <!-- Page 6 -->
         <div class="page2">
             <h1>We are Duo Studio,</h1>
             <div class="page2-container">
@@ -95,16 +259,16 @@
             </div>
         </div>
 
-        <!-- Page 3 -->
+        <!-- Page 7 - Selected Works -->
         <div class="page3">
             <h1>Selected Works</h1>
             <div class="page3-part1">
-                <img src="https://d33wubrfki0l68.cloudfront.net/aa3d2ff66de5f16336bd94fd68c3c2ce61e29f68/d5064/assets/home/home-casestudy-mgny.webp" alt="">
+                <img id="image" src="https://d33wubrfki0l68.cloudfront.net/aa3d2ff66de5f16336bd94fd68c3c2ce61e29f68/d5064/assets/home/home-casestudy-mgny.webp" alt="">
                 <video autoplay loop muted src="https://d33wubrfki0l68.cloudfront.net/a13ea7c2ca2f38134748966280e54af4340ce821/f976d/assets/home/projects_madegood-reduced.mp4"></video>
             </div>
         </div>
 
-        <!-- Page 4 -->
+        <!-- Page 8 -->
         <div class="page4">
             <div class="elem">
                 <img src="https://d33wubrfki0l68.cloudfront.net/3401770635e95968e300d88f8b9479ecbc008eeb/be2e5/assets/home/home-experience-1.webp" alt="">
@@ -124,7 +288,7 @@
             </div>
         </div>
 
-        <!-- Page 5 -->
+        <!-- Page 9 - Mentions -->
         <div class="page5">
             <h2>Mentions Clients</h2>
             <div class="box" data-image="https://images.unsplash.com/photo-1688362809005-e1d27bf427ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
@@ -136,71 +300,18 @@
                 <h4>2021</h4>
             </div>
         </div>
-<div class="aboutPage">
-  <section class="intro">
-    <div class="header">
-      <h1>Awake the scroll</h1>
-    </div>
-  </section>
 
-  <section class="spotlight">
-    <div class="header">
-      <h1>where Frames fade into fate</h1>
+        <footer></footer>
     </div>
 
-    <div class="spotlight-images">
-      <div class="row">
-        <div class="img"></div>
-        <div class="img"><img src="./image/cappucino.png" alt="Cappucino"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-      </div>
-      <div class="row">
-        <div class="img"></div>
-        <div class="img"><img src="./image/cortado.png" alt="Cortado"></div>
-        <div class="img"><img src="./image/latte copy.png" alt="Latte"></div>
-        <div class="img"></div>
-      </div>     
-      <div class="row">
-        <div class="img"></div>
-        <div class="img"><img src="./image/cappucino.png" alt="Cappucino"></div>
-        <div class="img"></div>
-        <div class="img"><img src="./image/cortado.png" alt="Cortado"></div>
-      </div>     
-      <div class="row">
-        <div class="img"><img src="./image/cappucino.png" alt="Cappucino"></div>
-        <div class="img"></div>
-        <div class="img"><img src="./image/latte copy.png" alt="Latte"></div>
-        <div class="img"></div>
-      </div>      
-    </div>
-
-    <div class="mask-container">
-      <div class="mask-img"></div>
-      <div class="header">
-        <h1>The last Frame Hits Hard</h1>
-      </div>
-    </div>
-  </section>
-
-  <section class="outro">
-    <h1>End of Act One</h1>
-  </section>
-</div>
-
-<footer></footer>
-
-</div>
-
-    <section type="module" src="./Js/Home/about.js"></section>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+    <script src="merged-script.js"></script>
+    <script src="head-links.js"></script>
+    <script src="load.js"></script>
     <script src="navbar/navbar.js"></script>
-      <script src="./transition.js"></script>
-
-
 </body>
 
 </html>

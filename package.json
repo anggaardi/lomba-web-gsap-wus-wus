@@ -1,5 +1,27 @@
 {
-  "dependencies": {
-    "gsap": "^3.13.0"
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio website with webpack setup",
+  "main": "../src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "html-webpack-plugin": "^5.5.4",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "terser-webpack-plugin": "^5.3.9"
   }
 }

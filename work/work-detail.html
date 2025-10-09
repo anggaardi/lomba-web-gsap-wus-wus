@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background-color: #0f0f0f;
+  width: 0%; /* Mulai dari 0 */
+  z-index: 1000;
+  transition: width 0.2s ease-out;
+  border-radius: 0 4px 4px 0;
+}
+
+
+        body{
+            font-family: "Manrope", sans-serif;
+            background-color: #edf1ee;
+            color: #0f0f0f;
+            overflow-x: hidden;
+        }
+
+        .back-button{
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: #0f0f0f;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: transform 0.3s ease, background 0.3s ease;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        .back-button:hover{
+            transform: translateX(-5px);
+            background: #333;
+        }
+
+        .detail-container{
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+
+        .detail-hero{
+            width: 100%;
+            height: 70vh;
+            min-height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .detail-hero img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .detail-info{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .detail-meta{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .meta-item{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .meta-label{
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            font-weight: 600;
+        }
+
+        .meta-value{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #0f0f0f;
+        }
+
+        .detail-content h1{
+            font-size: 3.5rem;
+            letter-spacing: -0.05em;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .detail-content p{
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .detail-gallery{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .gallery-item{
+            width: 100%;
+            height: 400px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .gallery-item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover img{
+            transform: scale(1.05);
+        }
+
+        @media(max-width: 1000px){
+            .detail-info{
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .detail-content h1{
+                font-size: 2.5rem;
+            }
+
+            .detail-content p{
+                font-size: 1.1rem;
+            }
+
+            .detail-gallery{
+                grid-template-columns: 1fr;
+            }
+
+            .back-button{
+                top: 1rem;
+                left: 1rem;
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media(max-width: 600px){
+            .detail-container{
+                padding: 5rem 1.5rem 3rem;
+            }
+
+            .detail-hero{
+                height: 50vh;
+                min-height: 300px;
+            }
+
+            .detail-content h1{
+                font-size: 2rem;
+            }
+
+            .meta-value{
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to Works</a>
+    <section class="progress"></section>
+    <div class="detail-container">
+        <div class="detail-hero">
+            <img id="hero-img" src="" alt="">
+        </div>
+
+        <div class="detail-info">
+            <div class="detail-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Client</span>
+                    <span class="meta-value" id="client">-</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Year</span>
+                    <span class="meta-value" id="year">-</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Category</span>
+                    <span class="meta-value" id="category">-</span>
+                </div>
+            </div>
+
+            <div class="detail-content">
+                <h1 id="project-name">Project Name</h1>
+                <p id="project-description">Project description goes here.</p>
+                <p>This project showcases innovative design solutions and creative problem-solving. We worked closely with the client to deliver an exceptional digital experience that exceeded expectations and achieved remarkable results.</p>
+            </div>
+        </div>
+
+        <div class="detail-gallery">
+            <div class="gallery-item">
+                <img id="gallery-img-1" src="" alt="">
+            </div>
+            <div class="gallery-item">
+                <img id="gallery-img-2" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const progress = document.querySelector('.progress');
+
+  // Register ScrollTrigger
+  if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Update width berdasarkan scroll progress
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: self => {
+        progress.style.width = (self.progress * 100).toFixed(2) + "%";
+      },
+      scrub: true
+    });
+  } else {
+    // Fallback native (kalau CDN gagal)
+    const onScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progress.style.width = percent + "%";
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  // ====== kode existing kamu di bawah ini ======
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = parseInt(urlParams.get('id'));
+  const projects = JSON.parse(localStorage.getItem('projects')) || [];
+  const project = projects.find(p => p.id === projectId);
+
+  if (project) {
+    document.title = `${project.name} - Project Detail`;
+    document.getElementById('hero-img').src = project.img;
+    document.getElementById('hero-img').alt = project.name || "Project hero";
+    document.getElementById('project-name').textContent = project.name || "Untitled Project";
+    document.getElementById('project-description').textContent = project.description || "-";
+    document.getElementById('client').textContent = project.client || "-";
+    document.getElementById('year').textContent = project.year || "-";
+    document.getElementById('category').textContent = project.category || "-";
+    document.getElementById('gallery-img-1').src = project.img;
+    document.getElementById('gallery-img-2').src = project.img;
+  } else {
+    window.location.href = 'index.html';
+  }
+});
+
+            gsap.to(progress,{
+                width:'100%',
+                duration:1,
+                ease:'power1.inout',
+                scrollTrigger:{
+                    triger:'body',
+                    start:'top 0%',
+                    bottom:'bottom 100%',
+                    scrub:true,
+                }
+            })
+            // Ambil ID dari URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = parseInt(urlParams.get('id'));
+
+            // Ambil data projects dari localStorage
+            const projects = JSON.parse(localStorage.getItem('projects'));
+
+            // Cari project yang sesuai
+            const project = projects.find(p => p.id === projectId);
+
+            if(project){
+                // Update konten halaman
+                document.title = `${project.name} - Project Detail`;
+                document.getElementById('hero-img').src = project.img;
+                document.getElementById('hero-img').alt = project.name;
+                document.getElementById('project-name').textContent = project.name;
+                document.getElementById('project-description').textContent = project.description;
+                document.getElementById('client').textContent = project.client;
+                document.getElementById('year').textContent = project.year;
+                document.getElementById('category').textContent = project.category;
+
+                document.getElementById('gallery-img-1').src = project.img;
+                document.getElementById('gallery-img-2').src = project.img;
+            } else {
+                // Jika project tidak ditemukan, redirect ke work page
+                window.location.href = 'index.html';
+            }
+    </script>
+</body>
+</html>

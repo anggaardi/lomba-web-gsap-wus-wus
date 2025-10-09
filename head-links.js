@@ -1,22 +1,31 @@
 const head = document.head;
 
 const links = [
-  { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" },
-  { rel: "stylesheet", href: "./style/home/about.css" },
+  {
+    rel: "stylesheet",
+    href: "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css",
+  },
   { rel: "stylesheet", href: "style.css" },
 
   { rel: "stylesheet", href: "navbar/navbar.css" },
-  { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" }
+  { rel: "stylesheet", href: "./style/Home/load.css" },
+
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
+  },
 ];
 
-links.forEach(linkData => {
+links.forEach((linkData) => {
   const link = document.createElement("link");
   Object.assign(link, linkData);
   head.appendChild(link);
 });
 
 // Tambahin script lain juga
-const script = document.createElement("script");
-script.type = "module";
-script.src = "menu-overlay.js";
+// const script = document.createElement("script");
+// script.type = "module";
+// // script.src = "menu-overlay.js";
+
+
 head.appendChild(script);
