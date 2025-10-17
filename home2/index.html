@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Kilau Studio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
-
+    <link rel="stylesheet" href="load.css">
 </head>
 <body>
+
+    <!-- Loading Animation Container -->
+    <div class="load-container">
+        <div class="anim-bloc">
+            <div class="images-container">
+                <div class="img-flip flip-img1"></div>
+                <div class="flip f2">
+                    <div class="img-flip flip-img2"></div>
+                </div>
+            </div>
+            <div class="bloc-txt">
+                <h2>Kilau Studio</h2>
+            </div>
+        </div>
+    </div>
    
-    <div id="main">
-         <nav>
+    <!-- Navbar - OUTSIDE #main -->
+    <nav>
         <div class="cursor"></div>
         <div class="logo">
             <a href="#">Kilau Wedding</a>
@@ -22,131 +37,80 @@
         </div>
     </nav>
 
-    <!-- Menu Overlay -->
- <div class="menu-overlay">
-  
+    <!-- Menu Overlay - OUTSIDE #main -->
+    <div class="menu-overlay">
         <button id="close-menu">×</button>
         <div class="menu-content">
-          <div class="menu-items">
-            <div class="col-lg">
-              <div class="menu-preview-img">
-                <img src="./image/latte.png" alt="">
-              </div>
+            <div class="menu-items">
+                <div class="col-lg">
+                    <div class="menu-preview-img">
+                        <img src="./image/latte.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="menu-links">
+                        <div class="link"><a href="index.html" data-img="./image/cappucino.png">Home</a></div>
+                        <div class="link"><a href="work.html" data-img="./image/cortado.png">Works</a></div>
+                        <div class="link"><a href="#" data-img="./image/latte.png">About</a></div>
+                        <div class="link"><a href="#" data-img="./image/cappucino.png">Contact</a></div>
+                    </div>
+                    <div class="menu-socials">
+                        <div class="social"><a href="#">Behance</a></div>
+                        <div class="social"><a href="#">Dribbble</a></div>
+                        <div class="social"><a href="#">LinkedIn</a></div>
+                        <div class="social"><a href="#">Instagram</a></div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm">
-              <div class="menu-links">
-                <div class="link"><a href="index.html" data-img="./image/cappucino.png">Home</a></div>
-                <div class="link"><a href="work.html" data-img="./image/cortado.png">Works</a></div>
-                <div class="link"><a href="#" data-img="./image/latte.png">About</a></div>
-                <div class="link"><a href="#" data-img="./image/cappucino.png">Contact</a></div>
-              </div>
-              <div class="menu-socials">
-                <div class="social"><a href="#">Behance</a></div>
-                <div class="social"><a href="#">Dribbble</a></div>
-                <div class="social"><a href="#">LinkedIn</a></div>
-                <div class="social"><a href="#">Instagram</a></div>
-              </div>
+            <div class="menu-footer">
+                <div class="col-lg"><a href="#">Run sequence</a></div>
+                <div class="col-sm">
+                    <a href="#">Origin</a>
+                    <a href="#">Join signal</a>
+                </div>
             </div>
-          </div>
-          <div class="menu-footer">
-            <div class="col-lg"><a href="#">Run sequence</a></div>
-            <div class="col-sm">
-              <a href="#">Origin</a>
-              <a href="#">Join signal</a>
-            </div>
-          </div>
         </div>
-      </div>    
-   
-        <!-- Navigation -->
+    </div>
+
+    <!-- Main Content Container -->
+    <div id="main">    </div>
 
 
-        <!-- Page 1 - Image Grid Section -->
+        <!-- ========== SECTION 1: Image Grid ========== -->
         <div class="page-1">
             <div class="content-page-1">
                 <div class="rotate-div">
-                    <!-- Row 1 -->
                     <div id="row-div-1" class="row-div">
-                        <div class="img-div">
-                            <img src="../image/image (1).jpg" alt="image 1">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (2).jpg" alt="image 2">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (3).jpg" alt="image 3">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (4).jpg" alt="image 4">
-                        </div>
+                        <div class="img-div"><img src="./image/image (1).jpg" alt="image 1"></div>
+                        <div class="img-div"><img src="./image/image (2).jpg" alt="image 2"></div>
+                        <div class="img-div"><img src="./image/image (3).jpg" alt="image 3"></div>
+                        <div class="img-div"><img src="./image/image (4).jpg" alt="image 4"></div>
                     </div>
-
-                    <!-- Row 2 -->
                     <div id="row-div-2" class="row-div">
-                        <div class="img-div">
-                            <img src="../image/image (5).jpg" alt="image 5">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (6).jpg" alt="image 6">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (7).jpg" alt="image 7">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (8).jpg" alt="image 8">
-                        </div>
+                        <div class="img-div"><img src="./image/image (5).jpg" alt="image 5"></div>
+                        <div class="img-div"><img src="./image/image (6).jpg" alt="image 6"></div>
+                        <div class="img-div"><img src="./image/image (7).jpg" alt="image 7"></div>
+                        <div class="img-div"><img src="./image/image (8).jpg" alt="image 8"></div>
                     </div>
-
-                    <!-- Row 3 -->
                     <div id="row-div-3" class="row-div">
-                        <div class="img-div">
-                            <img src="../image/image (9).jpg" alt="image 9">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (10).jpg" alt="image 10">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (11).jpg" alt="image 11">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (12).jpg" alt="image 12">
-                        </div>
+                        <div class="img-div"><img src="./image/image (9).jpg" alt="image 9"></div>
+                        <div class="img-div"><img src="./image/image (10).jpg" alt="image 10"></div>
+                        <div class="img-div"><img src="./image/image (11).jpg" alt="image 11"></div>
+                        <div class="img-div"><img src="./image/image (12).jpg" alt="image 12"></div>
                     </div>
-
-                    <!-- Row 4 -->
                     <div id="row-div-4" class="row-div">
-                        <div class="img-div">
-                            <img src="../image/image (13).jpg" alt="image 13">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (14).jpg" alt="image 14">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (15).jpg" alt="image 15">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (16).jpg" alt="image 16">
-                        </div>
+                        <div class="img-div"><img src="./image/image (13).jpg" alt="image 13"></div>
+                        <div class="img-div"><img src="./image/image (14).jpg" alt="image 14"></div>
+                        <div class="img-div"><img src="./image/image (15).jpg" alt="image 15"></div>
+                        <div class="img-div"><img src="./image/image (16).jpg" alt="image 16"></div>
                     </div>
-
-                    <!-- Row 5 -->
                     <div id="row-div-5" class="row-div">
-                        <div class="img-div">
-                            <img src="../image/image (17).jpg" alt="image 17">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (18).jpg" alt="image 18">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (19).jpg" alt="image 19">
-                        </div>
-                        <div class="img-div">
-                            <img src="../image/image (20).jpg" alt="image 20">
-                        </div>
+                        <div class="img-div"><img src="./image/image (17).jpg" alt="image 17"></div>
+                        <div class="img-div"><img src="./image/image (18).jpg" alt="image 18"></div>
+                        <div class="img-div"><img src="./image/image (19).jpg" alt="image 19"></div>
+                        <div class="img-div"><img src="./image/image (20).jpg" alt="image 20"></div>
                     </div>
                 </div>
-
-                <!-- Overlay -->
                 <div class="overlay-div">
                     <h1>Kilau Studio</h1>
                     <div class="scroll-down">
@@ -159,7 +123,7 @@
             </div>
         </div>
 
-        <!-- Page 2 - Text Section -->
+        <!-- ========== SECTION 2: Strategic Design Text ========== -->
         <div class="page-2">
             <div class="rounded-div-wrapper">
                 <div class="rounded-div"></div>
@@ -176,7 +140,7 @@
             </div>
         </div>
 
-        <!-- Page 3 - CTA Section -->
+        <!-- ========== SECTION 3: CTA & Brand Logos ========== -->
         <div class="page-3">
             <div class="top-page-3">
                 <h4>Unlock profit with monthly design sprints.</h4>
@@ -206,154 +170,265 @@
             </div>
         </div>
 
-        <!-- Page 4 - About Section + Zoom -->
-<!-- Page 4 - About Section + Zoom -->
-<div class="page-4">
-    <div class="lft-page-4">
-        <h1>We are <br>Kilau Studio.</h1>
-        <div class="cir-page-4">
-            <img src="../image/Vector.svg" alt="">
-        </div>
-    </div>
-    <div class="rght-page-4">
-        <div class="content-rght-page-4 c-one">
-            <h1>Growth and ROI</h1>
-            <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
-        </div>
-        <div class="content-rght-page-4 c-two">
-            <h1>Strategic Thinking</h1>
-            <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
-        </div>
-        <div class="content-rght-page-4 c-three">
-            <h1>Design Excellence</h1>  
-            <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
-        </div>
-    </div>
+        <!-- ========== SECTION 4: About Kilau Studio (WITH ZOOM EFFECT) ========== -->
+        <div class="page-4">
+            <div class="lft-page-4">
+                <h1>We are <br>Kilau Studio.</h1>
+                <div class="cir-page-4">
+                    <img src="./image/Vector.svg" alt="">
+                </div>
+            </div>
+            <div class="rght-page-4">
+                <div class="content-rght-page-4 c-one">
+                    <h1>Growth and ROI</h1>
+                    <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
+                </div>
+                <div class="content-rght-page-4 c-two">
+                    <h1>Strategic Thinking</h1>
+                    <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
+                </div>
+                <div class="content-rght-page-4 c-three">
+                    <h1>Design Excellence</h1>  
+                    <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to your revenue growth and business success - not just pretty pictures.</p>
+                </div>
+            </div>
 
-    <!-- Page 5 - Services Grid (INSIDE page-4) -->
-    <div class="page-5">
-        <div class="page-5-content">
-            <h1 class="page-5-title">Our Services</h1>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="../image/image (1).jpg" alt="Branding">
-                    </div>
-                    <div class="service-content">
-                        <h2>BRANDING</h2>
-                        <p>We translate the values of your company into a brand that speaks to your audience and outshines your competitors.</p>
-                    </div>
+            <!-- ========== PAGE 5: Hero Section (OVERLAY INSIDE page-4) ========== -->
+            <div class="page-5">
+                <div class="top">
+                    <h1 class="heroHeading">
+                        <!-- PASTE SVG CODE ANDA DI SINI -->
+                   <svg width="1309" height="165" viewBox="0 0 1309 165" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translateY(0%)">
+    <!-- K -->
+    <path d="M0 12.2827H26.9044V73.5996H94.2696V12.2827H120.965V161.404H94.2696V96.1242H26.9044V161.404H0V12.2827Z" fill="#131311" style="transform: translateY(0%); transform-origin: 60.4825px 86.8434px;" transform-origin="60.48249816894531px 86.84335327148438px"></path>
+    
+    <!-- I -->
+    <path d="M140 12.2827H167V161.404H140V12.2827Z" fill="#131311"></path>
+    
+    <!-- L -->
+    <path d="M183 12.2827H210V161.404H183V12.2827ZM183 138.671H256V161.404H183V138.671Z" fill="#131311"></path>
+    
+    <!-- A -->
+    <path d="M300 164.532C286.235 164.532 274.973 162.377 266.213 158.067C257.454 153.618 250.988 147.361 246.817 139.296C242.785 131.093 240.769 121.291 240.769 109.889V12.2827H267.464V109.889C267.464 120.874 270.106 128.938 275.39 134.082C280.812 139.227 289.016 141.799 300 141.799C311.123 141.799 319.327 139.227 324.61 134.082C329.894 128.938 332.536 120.874 332.536 109.889V12.2827H359.44V109.889C359.44 127.269 354.643 140.756 345.049 150.35C335.455 159.805 320.439 164.532 300 164.532Z" fill="#131311"></path>
+    
+    <!-- U -->
+    <path d="M420 12.2827H447V109.889C447 127.269 442.203 140.756 432.609 150.35C423.015 159.805 407.999 164.532 387.56 164.532C367.121 164.532 352.105 159.805 342.511 150.35C332.917 140.756 328.12 127.269 328.12 109.889V12.2827H355.024V109.889C355.024 120.874 357.666 128.938 362.95 134.082C368.372 139.227 376.576 141.799 387.56 141.799C398.683 141.799 406.887 139.227 412.17 134.082C417.454 128.938 420.096 120.874 420.096 109.889V12.2827H420Z" fill="#131311"></path>
+    
+    <!-- Spasi -->
+    
+    <!-- S -->
+    <path d="M530 164.532C516.235 164.532 504.973 162.377 496.213 158.067C487.454 153.618 480.988 147.361 476.817 139.296C472.785 131.093 470.769 121.291 470.769 109.889V86.739C470.769 75.337 472.785 65.535 476.817 57.332C480.988 49.129 487.454 42.872 496.213 38.561C504.973 34.112 516.235 31.887 530 31.887C543.765 31.887 555.027 34.112 563.787 38.561C572.546 42.872 579.012 49.129 583.183 57.332C587.215 65.535 589.231 75.337 589.231 86.739V96.124H562.327V86.739C562.327 75.754 559.685 67.69 554.401 62.546C549.117 57.401 540.913 54.829 529.93 54.829C518.806 54.829 510.602 57.401 505.319 62.546C500.035 67.69 497.393 75.754 497.393 86.739V109.889C497.393 120.874 500.035 128.938 505.319 134.082C510.603 139.227 518.806 141.799 529.79 141.799C540.913 141.799 549.117 139.227 554.401 134.082C559.685 128.938 562.327 120.874 562.327 109.889V102.798H589.231V109.889C589.231 127.269 584.434 140.756 574.84 150.35C565.246 159.805 550.23 164.532 529.791 164.532H530Z" fill="#131311"></path>
+    
+    <!-- T -->
+    <path d="M620 12.2827H720V35.0159H675V161.404H648V35.0159H603V12.2827H620Z" fill="#131311"></path>
+    
+    <!-- U -->
+    <path d="M740 12.2827H767V109.889C767 127.269 762.203 140.756 752.609 150.35C743.015 159.805 727.999 164.532 707.56 164.532C687.121 164.532 672.105 159.805 662.511 150.35C652.917 140.756 648.12 127.269 648.12 109.889V12.2827H675.024V109.889C675.024 120.874 677.666 128.938 682.95 134.082C688.372 139.227 696.576 141.799 707.56 141.799C718.683 141.799 726.887 139.227 732.17 134.082C737.454 128.938 740.096 120.874 740.096 109.889V12.2827H740Z" fill="#131311"></path>
+    
+    <!-- D -->
+    <path d="M820 164.532C806.235 164.532 794.973 162.377 786.213 158.067C777.454 153.618 770.988 147.361 766.817 139.296C762.785 131.093 760.769 121.291 760.769 109.889V12.2827H787.464V109.889C787.464 120.874 790.106 128.938 795.39 134.082C800.674 139.227 808.877 141.799 819.861 141.799C830.984 141.799 839.188 139.227 844.471 134.082C849.755 128.938 852.397 120.874 852.397 109.889V12.2827H879.301V109.889C879.301 127.269 874.504 140.756 864.91 150.35C855.316 159.805 840.3 164.532 819.861 164.532H820Z" fill="#131311"></path>
+    
+    <!-- I -->
+    <path d="M900 12.2827H927V161.404H900V12.2827Z" fill="#131311"></path>
+    
+    <!-- O -->
+    <path d="M980 164.532C966.235 164.532 954.973 162.377 946.213 158.067C937.454 153.618 930.988 147.361 926.817 139.296C922.785 131.093 920.769 121.291 920.769 109.889V12.2827H947.464V109.889C947.464 120.874 950.106 128.938 955.39 134.082C960.674 139.227 968.877 141.799 979.861 141.799C990.984 141.799 999.188 139.227 1004.47 134.082C1009.75 128.938 1012.4 120.874 1012.4 109.889V12.2827H1039.3V109.889C1039.3 127.269 1034.5 140.756 1024.91 150.35C1015.32 159.805 1000.3 164.532 979.861 164.532H980Z" fill="#131311"></path>
+</svg>
+                    </h1>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="../image/image (2).jpg" alt="Websites">
+                <div class="bottom">
+                    <div class="left">
+                        <h4>
+                            <svg stroke="currentColor" fill="none" stroke-width="1.25" viewBox="6 6 12 12" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em">
+                                <line x1="7" y1="7" x2="17" y2="17"></line>
+                                <polyline points="17 7 17 17 7 17"></polyline>
+                            </svg>
+                        </h4>
+                        <p>I help growing brands and startups gain an unfair advantage through premium, results driven websites.</p>
+                        <button class="leftBtn">Book a Call ↗</button>
                     </div>
-                    <div class="service-content">
-                        <h2>WEBSITES</h2>
-                        <p>Websites serve as the gateway to your company, and first impressions matter. From interactive portfolios to e-commerce marketplaces.</p>
+                    <div class="middle">
+                        <div class="image">
+                            <img src="../home2/image/image (11).jpg" alt="Hero Image" />
+                        </div>
                     </div>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="../image/image (3).jpg" alt="Content">
-                    </div>
-                    <div class="service-content">
-                        <h2>CONTENT</h2>
-                        <p>There's no limit to how you market your company. With our art direction and diverse skills, see your vision come alive.</p>
+                    <div class="right">
+                        <p>Available for freelance work</p>
+                        <h2>Oct '24</h2>
                     </div>
                 </div>
             </div>
+            <!-- END PAGE 5 -->
+
+        </div>
+        <!-- END .page-4 -->
+
+        <!-- ========== PAGE 6: Services Section ========== -->
+        <div class="page-6">
+            <div>
+                <h2>
+                    <span>How</span>
+                    <span>I</span>
+                    <span>can</span>
+                    <span>help</span>
+                    <span>you</span>
+                    <span>/</span>
+                </h2>
+            </div>
+            <div class="serviText">
+                <p class="para">(Services)</p>
+                <div class="serviText2">
+                    <p>Frustrated with websites that don't reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business.</p>
+                </div>
+            </div>
+            <div class="services">
+                <!-- Service 1: Web Development -->
+                <div class="one border ek">
+                    <div class="oneL">
+                        <h2>(01)</h2>
+                    </div>
+                    <div class="oneR">
+                        <h3>Web Development</h3>
+                        <p>A website developed to captivate and convert can elevate your brand to new heights. My custom-coded sites are meticulously crafted to reflect your unique identity, delivering seamless experiences with a focus on animation—keeping your audience engaged and returning.</p>
+                        <div class="list">
+                            <div class="listItem">
+                                <span>01</span>
+                                CMS Integration
+                            </div>
+                            <div class="listItem">
+                                <span>02</span>
+                                Motion & Animations
+                            </div>
+                            <div class="listItem bt">
+                                <span>03</span>
+                                3D Development
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Web Design -->
+                <div class="one border do">
+                    <div class="oneL">
+                        <h2>(02)</h2>
+                    </div>
+                    <div class="oneR">
+                        <h3>Web Design</h3>
+                        <p>Amplify your online presence with a website that truly connects with your audience's feelings and desires. I design stunning, high-converting sites that align with your business goals, helping you stand out and scale effectively.</p>
+                        <div class="list">
+                            <div class="listItem">
+                                <span>01</span>
+                                Responsive Design
+                            </div>
+                            <div class="listItem">
+                                <span>02</span>
+                                Wireframing
+                            </div>
+                            <div class="listItem bt">
+                                <span>03</span>
+                                UX Writing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: SEO -->
+                <div class="one border tin">
+                    <div class="oneL">
+                        <h2>(03)</h2>
+                    </div>
+                    <div class="oneR">
+                        <h3>SEO</h3>
+                        <p>Your website deserves to be seen. I optimize your online presence to elevate your visibility in search results, helping your business attract the right audience and stand out in the digital landscape.</p>
+                        <div class="list">
+                            <div class="listItem">
+                                <span>01</span>
+                                Technical SEO
+                            </div>
+                            <div class="listItem">
+                                <span>02</span>
+                                On-Page Optimization
+                            </div>
+                            <div class="listItem bt">
+                                <span>03</span>
+                                SEO Audits & Analysis
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== PAGE 7: Selected Works ========== -->
+    <div id="main">
+
+        <div class="page-7">
+           <!-- Tambahkan di dalam .page-7, setelah .serviText -->
+
+<div id="work">
+    <div id="images">
+        <div class="cnt cnt1">
+            <img data-color="d7ddf2" data-index="0" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="">
+            <div class="capsule-container">
+                <div class="info-capsule year-capsule">2020</div>
+                <div class="info-capsule name-capsule">Aerzei</div>
+                <div class="info-capsule arrow-capsule">Dribbble</div>
+            </div>
+        </div>
+        <div class="cnt cnt2">
+            <img data-color="edd5d5" data-index="1" src="https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?w=800" alt="">
+            <div class="capsule-container">
+                <div class="info-capsule year-capsule">2021</div>
+                <div class="info-capsule name-capsule">Portfolio</div>
+                <div class="info-capsule arrow-capsule">Behance</div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<!-- Cursor Element - Tambahkan sebelum closing </body> -->
+<div id="cursor">
+    <div>
+        <div class="crow">
+            <div class="ccircle"></div>
+            <div class="ccapsule">Dribbble</div>
+        </div>
+        <div id="elem">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400" alt="">
+            <img src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?w=400" alt="">
+            <img src="https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?w=400" alt="">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400" alt="">
+        </div>
+    </div>
+    <div>
+        <div class="crow">
+            <div class="ccircle"></div>
+            <div class="ccapsule">Behance</div>
+        </div>
+        <div id="elem">
+            <img src="https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?w=400" alt="">
+            <img src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?w=400" alt="">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400" alt="">
+            <img src="https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?w=400" alt="">
         </div>
     </div>
 </div>
-
-<!-- Horizontal Scroll Section - AFTER page-4 -->
-<section id="horizontal-scroll">
-    <div class="horizontal-scroll-wrapper">
-        <div class="horizontal">
-            <div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../image/image (4).jpg" alt="Branding">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-category">BRANDING</div>
-                        <h2>Brand Identity</h2>
-                        <p>We translate the values of your company into a brand that speaks to your audience and outshines your competitors.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../image/image (5).jpg" alt="Websites">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-category">WEBSITES</div>
-                        <h2>Web Design</h2>
-                        <p>Websites serve as the gateway to your company, and first impressions matter. From interactive portfolios to e-commerce marketplaces.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../image/image (6).jpg" alt="Content">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-category">CONTENT</div>
-                        <h2>Content Creation</h2>
-                        <p>There's no limit to how you market your company and what your brand can do. With our art direction and team's diverse skills.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../image/image (7).jpg" alt="Digital">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-category">DIGITAL</div>
-                        <h2>Digital Marketing</h2>
-                        <p>Build your online presence with strategic social media management and digital campaigns that convert.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../image/image (8).jpg" alt="Creative">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-category">CREATIVE</div>
-                        <h2>Graphic Design</h2>
-                        <p>From logos to complete brand identities, we craft visual solutions that communicate your message effectively.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../image/image (9).jpg" alt="Strategy">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-category">STRATEGY</div>
-                        <h2>Consulting</h2>
-                        <p>Expert guidance to help your business thrive with strategic insights and actionable plans.</p>
-                    </div>
-                </div>
-            </div>
         </div>
+
+          
+              
     </div>
-</section>
+</div>
+
+    <!-- END #main -->
+
     <!-- Scripts -->
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="load.js"></script>
     <script src="script.js"></script>
-        <script src="navbar.js"></script>
+    <script src="navbar.js"></script>
 
 </body>
 </html>

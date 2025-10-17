@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.querySelector("#main");
+  const container = document.querySelector("#main"); // UBAH dari .container ke #main
   const menuToggle = document.querySelector(".menu-toggle");
   const menuOverlay = document.querySelector(".menu-overlay");
   const menuContent = document.querySelector(".menu-content");
@@ -9,22 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let isOpen = false;
   let isAnimating = false;
 
-  let lenis = null; // Declare lenis variable
-
-  // Initialize Lenis
-  if (window.Lenis) {
-    lenis = new Lenis({
-      duration: 1.2, // Duration for scroll
-      easing: 'ease', // Easing function
-      smoothWheel: true, // Enable smooth scroll on mouse wheel
-      smoothTouch: true, // Enable smooth scroll on touch devices
-      direction: 'vertical', // Set scroll direction
-      gestureDirection: 'vertical',
-    });
-
-    // Start Lenis smooth scrolling
-    lenis.start();
-  }
+  // Ambil instance Lenis dari script.js (sudah diexpose ke window.lenis)
+  let lenis = window.lenis;
 
   menuToggle.addEventListener("click", () => {
     if (!isOpen) openMenu();
@@ -102,6 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isAnimating || isOpen) return;
     isAnimating = true;
 
+    // Stop Lenis scroll saat menu buka
+    if (lenis) {
+      lenis.stop();
+    }
+
+    // Animate container
     if (container) {
       gsap.to(container, {
         rotation: 10,
@@ -183,6 +175,11 @@ document.addEventListener("DOMContentLoaded", () => {
         menuOverlay.classList.remove("active");
         gsap.set([".link a", ".social a"], { y: "120%" });
         resetPreviewImage();
+
+        // Start Lenis scroll lagi setelah menu tutup
+        if (lenis) {
+          lenis.start();
+        }
       },
     });
   }
@@ -245,29 +242,6 @@ document.addEventListener("DOMContentLoaded", () => {
           window.location.href = targetPage;
         },
       });
-    });
-  });
-
-  const menuLinksChange = document.querySelectorAll(".link a");
-
-  function changePage(page) {
-    history.pushState(null, '', page);
-    
-    const newContent = `Content for ${page}`; // Fix placeholder; ganti dengan load actual jika perlu
-
-    document.querySelector('#main').innerHTML = newContent;
-
-    if (lenis) {
-      lenis.resize();
-    }
-  }
-
-  menuLinksChange.forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-
-      const page = this.getAttribute("href");
-      changePage(page);
     });
   });
 });

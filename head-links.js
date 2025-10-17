@@ -22,10 +22,7 @@ links.forEach((linkData) => {
   head.appendChild(link);
 });
 
-// Tambahin script lain juga
-// const script = document.createElement("script");
-// script.type = "module";
-// // script.src = "menu-overlay.js";
+
 
 
 head.appendChild(script);
